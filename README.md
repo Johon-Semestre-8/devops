@@ -79,7 +79,3 @@ Este proyecto está bajo la licencia **MIT**.
 ### **🔗 Enlaces Relacionados**  
 - [Documentación de Python](https://docs.python.org/3/)  
 - [GitHub del Proyecto](https://github.com/tu-usuario/menu-urls)  
-
----
-
-Este `README.md` incluye todo lo necesario para que otros usuarios comprendan y utilichen tu programa. ¿Quieres añadir algo más? 😊
