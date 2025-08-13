@@ -19,8 +19,10 @@ def opcion4():
     webbrowser.open("https://stackoverflow.com")
 
 def opcion5():
-    print("🚀 Has elegido la Opción 5: ChatGPT")
-    webbrowser.open("https://chat.openai.com")
+    print("🚀 Has elegido la Opción 5: System monitor")
+    subprocess.Popen(["python", "system_monitor.py"])
+    time.sleep(1)  # esperar un segundo para que el servidor levante
+    webbrowser.open("http://127.0.0.1:5000")
     
 def opcion6():
     print("🚀 Has elegido la Opción 6: Aplicación de sistema de monitoreo")
@@ -35,7 +37,7 @@ def mostrar_menu():
     print("2. Documentación Python")
     print("3. GitHub")
     print("4. Stack Overflow")
-    print("5. ChatGPT")
+    print("5. System Monitor")
     print("6. System Check")
     print("7. Salir")
 
