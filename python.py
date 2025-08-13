@@ -1,3 +1,5 @@
+import subprocess
+import time
 import webbrowser
 
 def opcion1():
@@ -19,6 +21,13 @@ def opcion4():
 def opcion5():
     print("🚀 Has elegido la Opción 5: ChatGPT")
     webbrowser.open("https://chat.openai.com")
+    
+def opcion6():
+    print("🚀 Has elegido la Opción 6: Aplicación de sistema de monitoreo")
+    # arrancar el servidor Flask
+    subprocess.Popen(["python", "system_check_flask.py"])
+    time.sleep(1)  # esperar un segundo para que el servidor levante
+    webbrowser.open("http://127.0.0.1:5000")
 
 def mostrar_menu():
     print("\n----- 🌐 MENÚ CON ENLACES -----")
@@ -27,7 +36,8 @@ def mostrar_menu():
     print("3. GitHub")
     print("4. Stack Overflow")
     print("5. ChatGPT")
-    print("6. Salir")
+    print("6. System Check")
+    print("7. Salir")
 
 def main():
     while True:
@@ -45,10 +55,12 @@ def main():
             elif opcion == 5:
                 opcion5()
             elif opcion == 6:
+                opcion6()
+            elif opcion == 7:
                 print("👋 Saliendo del programa...")
                 break
             else:
-                print("❌ Error: Ingresa un número del 1 al 6.")
+                print("❌ Error: Ingresa un número del 1 al 7.")
         except ValueError:
             print("❌ Error: Debes ingresar un número válido.")
 
